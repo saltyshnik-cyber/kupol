@@ -1,0 +1,50 @@
+{
+  "_comment": "Каталог собран из канала t.me/kupol_cosmetic. Публичных цен в канале почти нет: цены и спеццены вписывайте в поля price / priceB2b. restricted=true — товар виден только верифицированным специалистам (диплом одобрен).",
+  "categories": [
+    { "id": "inject", "title": "Инъекционные препараты" },
+    { "id": "botulin", "title": "Ботулотоксины" },
+    { "id": "meso", "title": "Мезотерапия и липолитики" },
+    { "id": "peel", "title": "Пилинги" },
+    { "id": "care", "title": "Проф. и домашний уход" },
+    { "id": "consum", "title": "Расходные материалы" }
+  ],
+  "products": [
+    { "id": "profhilo", "category": "inject", "brand": "IBSA", "title": "Profhilo / Profhilo Structura", "country": "Швейцария", "restricted": true, "description": "Гидролифтинг: ультрачистая гиалуроновая кислота низкой и высокой молекулярной массы 1:1, лифтинг и увлажнение." },
+    { "id": "viscoderm", "category": "inject", "brand": "IBSA", "title": "Viscoderm 0,8% / 1,6% / 2,0%, Hydrobooster, Skinko E", "country": "Италия", "restricted": true, "description": "Биоревитализанты на ГК неживотного происхождения для разнослойного восстановления тканей и 3D-ревитализации." },
+    { "id": "hyalcode", "category": "inject", "brand": "HyalCode", "title": "HyalCode (1,5%, 1,8%, AMINO)", "restricted": true, "description": "Биоревитализанты на основе гиалуроновой кислоты. Новинка: HyalCode AMINO 1,5% с аминокислотами." },
+    { "id": "rrs", "category": "inject", "brand": "RRS", "title": "RRS HA Long Lasting", "country": "Испания", "restricted": true, "description": "Биоревитализирующий препарат с эффектом 3D-ремоделирования и пролонгированным улучшением качества кожи: 16 аминокислот, 6 антиоксидантов, 5 полифенолов." },
+    { "id": "pinklla", "category": "inject", "brand": "PinkLLA", "title": "PinkLLA", "restricted": true, "description": "Скинбустер нового поколения: полимолочная кислота + полинуклеотиды. Лицо, шея, декольте, кисти рук, тело." },
+    { "id": "radiesse", "category": "inject", "brand": "Radiesse", "title": "Radiesse", "restricted": true, "description": "Филлер на основе гидроксиапатита кальция: коррекция контуров и стимуляция собственного коллагена." },
+    { "id": "belotero", "category": "inject", "brand": "Belotero", "title": "Belotero Soft / Balance / Intense и др.", "restricted": true, "description": "Линейка филлеров на основе ГК с CPM-технологией: от мелких морщин до объёмного моделирования." },
+    { "id": "aliaxin", "category": "inject", "brand": "Aliaxin", "title": "Aliaxin", "country": "Италия", "restricted": true, "description": "Сертифицированные филлеры для контурной пластики лица." },
+    { "id": "renaissance", "category": "inject", "brand": "Renaissance", "title": "Renaissance", "country": "Израиль", "restricted": true, "description": "Филлеры для контурной пластики." },
+    { "id": "artfiller", "category": "inject", "brand": "Art Filler", "title": "Art Filler Fine / Lips / Volume / Universal", "restricted": true, "description": "Линейка филлеров под разные зоны и задачи." },
+    { "id": "xspurt", "category": "inject", "brand": "XSPURT", "title": "XSPURT", "restricted": true, "description": "Инъекционный препарат, по которому в «Куполе» проходят семинары." },
+    { "id": "repart", "category": "inject", "brand": "Repart", "title": "Repart", "restricted": true, "description": "Биоревитализация, контурная пластика, биоремоделирование ПМК для лица и тела." },
+
+    { "id": "dysport", "category": "botulin", "brand": "Ipsen", "title": "Диспорт (Dysport)", "country": "Франция", "restricted": true, "description": "Ботулотоксин типа А." },
+    { "id": "relatox", "category": "botulin", "brand": "Relatox", "title": "Релатокс", "restricted": true, "description": "Ботулотоксин типа А." },
+    { "id": "miotox", "category": "botulin", "brand": "Miotox", "title": "Миотокс", "restricted": true, "description": "Ботулотоксин типа А." },
+
+    { "id": "fusion", "category": "meso", "brand": "Fusion Meso", "title": "Fusion Meso: мезококтейли", "country": "Испания", "restricted": true, "description": "Мезотерапевтические препараты и коктейли (Oxynergy Paris Group): ГК, витамины, аминокислоты, пептиды." },
+    { "id": "qlab", "category": "meso", "brand": "Q-Lab", "title": "Q-Lab, Q-Peptide Total Slim", "country": "Испания", "restricted": true, "description": "Мезопрепараты и липолитический пептидный коктейль." },
+    { "id": "monro", "category": "meso", "brand": "HyalCode + Q-Lab", "title": "Набор «Коктейль Monro / Monro Monaco»", "restricted": true, "description": "Нейробиоревитализация: сочетание биоревитализации и ботулинотерапии. Набор на 4–5 процедур." },
+    { "id": "nctf", "category": "meso", "brand": "NCTF", "title": "NCTF", "country": "Франция", "restricted": true, "description": "Мезопрепарат для биоревитализации." },
+
+    { "id": "enerpeel", "category": "peel", "brand": "Enerpeel (General Topics)", "title": "Enerpeel: профессиональная линейка пилингов", "country": "Италия", "description": "Химические пилинги для контролируемого глубокого обновления кожи без травматизации: от акне до возрастной атрофии." },
+    { "id": "innoexfo", "category": "peel", "brand": "Innoaesthetics", "title": "Inno-Exfo (Skin Recovery, MCA 35 и др.)", "country": "Испания", "description": "Испанские пилинги: лечение акне, коррекция постакне, хроно- и фотостарения, выравнивание тона." },
+    { "id": "tcduo", "category": "peel", "brand": "TC-DuoPeel", "title": "TC-DuoPeel («Барби-пилинг»)", "description": "Двухфазный ремоделирующий пилинг-биоревитализант: лифтинг, осветление пигментации, ровный тон." },
+    { "id": "refine", "category": "peel", "brand": "S5", "title": "Re-FinePeel", "description": "Первый ретиноловый пилинг с пептидным комплексом: акне, постакне, гиперпигментация, фото- и хроностарение." },
+
+    { "id": "innoderma", "category": "care", "brand": "Inno-Derma", "title": "Сыворотки и кремы Inno-Derma, Inno-Epigen", "country": "Испания", "description": "Премиальный уход с эпигенетическими компонентами: пигментация, покраснения, себорегуляция." },
+    { "id": "tebiskin", "category": "care", "brand": "Tebiskin", "title": "Tebiskin (Rosagate, линейка OSK и др.)", "country": "Италия", "description": "Средства для розацеа и чувствительной кожи, линейка для жирной и проблемной кожи." },
+    { "id": "medici", "category": "care", "brand": "Medici Bioceutics", "title": "Total Lift PDRN+, Exosome Advanced, U-White", "country": "Италия", "description": "Биоцевтическая косметика: лифтинг с PDRN, экзосомы, осветление и работа с пигментацией." },
+    { "id": "meline", "category": "care", "brand": "MeLine", "title": "MeLine", "description": "Специализированная система для терапии гиперпигментации на всех этапах меланогенеза." },
+    { "id": "declare", "category": "care", "brand": "Declare", "title": "Declare (тоники, кремы, ASMR для век и др.)", "country": "Швейцария", "description": "Профессиональная и домашняя швейцарская косметика." },
+    { "id": "yur", "category": "care", "brand": "Yu.r", "title": "Yu.r CCC Cream SPF50+", "country": "Южная Корея", "price": "3 000 ₽", "description": "Многофункциональный тонирующий крем с Color Change, 50 мл. 3 оттенка." },
+    { "id": "koreatida", "category": "care", "brand": "KOREATIDA", "title": "Гидрогелевые патчи для глаз", "country": "Южная Корея", "description": "Комплекс из 8 пептидов, плотное прилегание." },
+
+    { "id": "acriol", "category": "consum", "brand": "Акриол Про", "title": "Акриол Про", "description": "Профессиональный анестетик для кожи с регистрационным удостоверением." },
+    { "id": "consumables", "category": "consum", "brand": "Купол", "title": "Перчатки, шприцы, иглы и канюли, анестетики", "description": "Всё для работы кабинета «от А до Я». Бесплатная доставка от 5 000 ₽." }
+  ]
+}

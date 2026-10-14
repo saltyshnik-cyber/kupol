@@ -1,0 +1,74 @@
+{
+  "_comment": "Расписание приёма моделей из канала t.me/kupolmodel. Обновляется командой /update-content в Claude Code. Прошедшие даты Mini App скрывает сам.",
+  "events": [
+    {
+      "id": "2026-10-15-dysport",
+      "date": "2026-10-15",
+      "title": "Ботулинотерапия | Диспорт",
+      "times": ["17:00"],
+      "prices": [{ "name": "Диспорт, 1 единица", "price": "90 ₽" }],
+      "note": "Последнее окошко"
+    },
+    {
+      "id": "2026-10-16-biorevit",
+      "date": "2026-10-16",
+      "title": "Биообновление",
+      "description": "Profhilo запускает естественные процессы обновления тканей. Viscoderm Hydrobooster восстанавливает увлажнённость, улучшает текстуру и эластичность кожи.",
+      "times": ["18:00", "18:30", "19:00", "19:30"],
+      "prices": [
+        { "name": "Profhilo", "price": "16 000 ₽" },
+        { "name": "Viscoderm Hydrobooster", "price": "14 000 ₽" }
+      ]
+    },
+    {
+      "id": "2026-10-17-biorevit",
+      "date": "2026-10-17",
+      "title": "Биообновление",
+      "description": "Profhilo и Viscoderm Hydrobooster.",
+      "times": ["14:00", "14:30", "15:00", "15:30"],
+      "prices": [
+        { "name": "Profhilo", "price": "16 000 ₽" },
+        { "name": "Viscoderm Hydrobooster", "price": "14 000 ₽" }
+      ]
+    },
+    {
+      "id": "2026-10-19-relatox",
+      "date": "2026-10-19",
+      "title": "Ботулинотерапия | Релатокс",
+      "doctor": "Трофимович Юрий Геннадьевич",
+      "times": ["18:00", "18:30", "19:00", "19:30"],
+      "prices": [{ "name": "Релатокс, 1 единица", "price": "200 ₽" }]
+    },
+    {
+      "id": "2026-10-20-contour",
+      "date": "2026-10-20",
+      "title": "Контурная пластика",
+      "description": "Носогубные складки, губы, скулы, углы нижней челюсти, носослёзная борозда, подбородок.",
+      "times": ["18:30", "19:00", "19:30"],
+      "prices": [
+        { "name": "Xspurt", "price": "9 000 ₽" },
+        { "name": "Art Filler Fine", "price": "14 500 ₽" },
+        { "name": "Art Filler Lips", "price": "15 500 ₽" },
+        { "name": "Art Filler Volume", "price": "16 500 ₽" },
+        { "name": "Universal", "price": "15 500 ₽" }
+      ]
+    },
+    {
+      "id": "2026-10-22-mix",
+      "date": "2026-10-22",
+      "title": "Viscoderm Skinko E | Profhilo | Art Filler | Диспорт",
+      "times": ["18:00", "19:00", "19:30"],
+      "prices": [
+        { "name": "Viscoderm Skinko E", "price": "7 000 ₽" },
+        { "name": "Диспорт, 1 единица", "price": "90 ₽" },
+        { "name": "Art Filler Fine", "price": "14 500 ₽" },
+        { "name": "Art Filler Lips", "price": "15 500 ₽" },
+        { "name": "Art Filler Volume", "price": "16 500 ₽" },
+        { "name": "Universal", "price": "15 500 ₽" },
+        { "name": "Profhilo", "price": "16 000 ₽" },
+        { "name": "RRS", "price": "12 500 ₽" },
+        { "name": "Xspurt", "price": "9 000 ₽" }
+      ]
+    }
+  ]
+}
