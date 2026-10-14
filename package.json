@@ -1,0 +1,29 @@
+{
+  "name": "kupol-bot",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "db:migrate": "node --env-file=.env.local scripts/migrate.mjs",
+    "bot:webhook": "node --env-file=.env.local scripts/set-webhook.mjs",
+    "smoke": "tsx scripts/smoke.mts"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.2.0",
+    "grammy": "^1.46.0",
+    "next": "^15.5.27",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.10",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}
