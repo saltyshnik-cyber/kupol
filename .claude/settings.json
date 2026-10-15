@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run typecheck)",
+      "Bash(npm run smoke)",
+      "Bash(npm run build)",
+      "Bash(npm run dev)",
+      "Bash(python3 scripts/extract-channel.py:*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.local)"
+    ]
+  }
+}
