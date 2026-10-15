@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import Home_ from "@/components/Home";
 import Learn from "@/components/Learn";
 import Catalog from "@/components/Catalog";
 import Models from "@/components/Models";
@@ -8,9 +9,10 @@ import Profile from "@/components/Profile";
 import { Icon, type IconName } from "@/components/ui";
 import { call, initData, tg, type Me } from "@/components/tg";
 
-type Tab = "learn" | "catalog" | "model" | "profile";
+type Tab = "home" | "learn" | "catalog" | "model" | "profile";
 
 const TABS: { id: Tab; label: string; icon: IconName }[] = [
+  { id: "home", label: "Главная", icon: "heart" },
   { id: "learn", label: "Обучение", icon: "cap" },
   { id: "catalog", label: "Каталог", icon: "bag" },
   { id: "model", label: "Модели", icon: "sparkle" },
@@ -18,7 +20,7 @@ const TABS: { id: Tab; label: string; icon: IconName }[] = [
 ];
 
 export default function Home() {
-  const [tab, setTab] = useState<Tab>("learn");
+  const [tab, setTab] = useState<Tab>("home");
   const [me, setMe] = useState<Me | null>(null);
   const [toast, setToast] = useState("");
   const [inTelegram, setInTelegram] = useState(false);
@@ -37,7 +39,7 @@ export default function Home() {
     w?.expand?.();
     try { w?.setHeaderColor?.("#0a0d18"); w?.setBackgroundColor?.("#0a0d18"); } catch {}
     const q = new URLSearchParams(window.location.search).get("tab");
-    if (q === "catalog" || q === "model" || q === "profile" || q === "learn") setTab(q);
+    if (q === "home" || q === "catalog" || q === "model" || q === "profile" || q === "learn") setTab(q);
   }, []);
 
   const loadMe = useCallback(async () => {
@@ -62,6 +64,7 @@ export default function Home() {
             <div><b>Откройте через Telegram</b><p>Вне Telegram запись и заявки недоступны. Откройте приложение через бота.</p></div>
           </div>
         )}
+        {tab === "home" && <Home_ go={(t) => { setTab(t); window.scrollTo({ top: 0 }); }} />}
         {tab === "learn" && <Learn flash={flash} inTelegram={inTelegram} />}
         {tab === "catalog" && <Catalog />}
         {tab === "model" && <Models />}

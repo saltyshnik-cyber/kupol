@@ -38,7 +38,6 @@ export default function Learn({ flash, inTelegram }: { flash: (t: string) => voi
 
   const list = useMemo(() => courses.filter((c) => filter === "all" || c.audience.includes(filter)), [filter]);
   const current = courses.find((c) => c.id === openId) || null;
-  const featured = courses.find((c) => c.id === "doctor-cosmetology");
 
   async function enroll(id: string) {
     if (!inTelegram) return openTg(`https://t.me/${CONFIG.telegram.study}`);
@@ -63,28 +62,7 @@ export default function Learn({ flash, inTelegram }: { flash: (t: string) => voi
 
   return (
     <div className="tab-in">
-      <section className="hero">
-        <h2>Учим косметологии с {CONFIG.since} года</h2>
-        <p>Практика на моделях, мини-группы, документ об обучении и беспроцентная рассрочка.</p>
-        <div className="stats">
-          <div><b>{new Date().getFullYear() - CONFIG.since}</b>года на рынке</div>
-          <div><b>{courses.length}</b>программ</div>
-          <div><b>{teachers.length}</b>преподавателей</div>
-        </div>
-      </section>
-
-      {featured && (
-        <button className="next" onClick={() => setOpenId(featured.id)}>
-          <span className="ic"><Icon name="calendar" /></span>
-          <span>
-            <b>Старт {featured.nextStart}</b>
-            <span>{featured.title}</span>
-          </span>
-          <span className="go"><Icon name="chevron" /></span>
-        </button>
-      )}
-
-      <div className="sec-row"><h2 className="sec">Программы</h2></div>
+      <div className="sec-row" style={{ marginTop: 18 }}><h2 className="sec">Программы обучения</h2></div>
       <div className="chips">
         {chips.map((c) => (
           <button key={c.id} className={`chip ${filter === c.id ? "on" : ""}`} onClick={() => setFilter(c.id)}>{c.label}</button>
