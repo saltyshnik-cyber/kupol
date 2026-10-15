@@ -13,7 +13,7 @@ type Tab = "learn" | "catalog" | "model" | "profile";
 const TABS: { id: Tab; label: string; icon: IconName }[] = [
   { id: "learn", label: "Обучение", icon: "cap" },
   { id: "catalog", label: "Каталог", icon: "bag" },
-  { id: "model", label: "Модель", icon: "sparkle" },
+  { id: "model", label: "Модели", icon: "sparkle" },
   { id: "profile", label: "Профиль", icon: "user" },
 ];
 

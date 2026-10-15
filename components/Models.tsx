@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { CONFIG } from "@/lib/config";
 import { upcomingEvents, formatDateRu, type ModelEvent } from "@/lib/content";
 import { Cover, Icon } from "./ui";
-import { openBot } from "./tg";
+import { openBot, openTg } from "./tg";
 
 const WD = ["вс", "пн", "вт", "ср", "чт", "пт", "сб"];
 const dayOf = (iso: string) => {
@@ -34,6 +34,12 @@ export default function Models() {
         <p>Процедуры у врачей под контролем преподавателей. Оплачивается только препарат.</p>
         <button className="btn" onClick={() => openBot("model")}>Подать анкету</button>
       </section>
+
+      <button className="chatcard" onClick={() => openTg(`https://t.me/${CONFIG.telegram.models}`)}>
+        <span className="ic"><Icon name="send" size={22} /></span>
+        <span className="tx"><b>Чат моделей</b><small>Свободные окошки и новые даты, @{CONFIG.telegram.models}</small></span>
+        <span className="go">Открыть</span>
+      </button>
 
       <h2 className="sec">Ближайшие даты</h2>
       {loaded && events.length === 0 && <div className="empty">Новые даты скоро появятся. Следите за каналом @{CONFIG.telegram.models}</div>}
@@ -78,9 +84,6 @@ export default function Models() {
         <div className="step"><span className="n">2</span><p>Администратор подберёт время и процедуру</p></div>
         <div className="step"><span className="n">3</span><p>Приходите в центр: процедуру делает врач, студенты наблюдают</p></div>
       </div>
-      <p className="muted" style={{ textAlign: "center", fontSize: 13, marginTop: 18 }}>
-        Чат моделей: <a href={`https://t.me/${CONFIG.telegram.models}`}>@{CONFIG.telegram.models}</a>
-      </p>
     </div>
   );
 }
