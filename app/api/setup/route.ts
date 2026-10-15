@@ -55,5 +55,5 @@ export async function GET(req: Request) {
   }
 
   const ok = steps.database.startsWith("ok") && steps.telegram.startsWith("ok");
-  return NextResponse.json({ ok, ...steps }, { status: ok ? 200 : 500 });
+  return new NextResponse(JSON.stringify({ ok, ...steps }, null, 1), { status: ok ? 200 : 500, headers: { "content-type": "application/json; charset=utf-8" } });
 }
