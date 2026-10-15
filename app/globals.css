@@ -362,3 +362,4 @@ body::after { position: absolute; inset: 0; z-index: -1; background: radial-grad
 .tile-cta { display: inline-flex; align-items: center; gap: 4px; margin-top: 12px; font-weight: 700; color: var(--rose-2); }
 .linkbtn { margin-top: 14px; background: none; border: 0; padding: 0; color: var(--pearl); font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
 .nav button { font-size: 11px; }
+.tile .cover::after { background: linear-gradient(180deg, rgba(8,13,36,0.05) 20%, rgba(8,13,36,0.88) 100%); }

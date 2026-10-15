@@ -5,6 +5,11 @@ import { courses, teachers, courseById } from "@/lib/content";
 import { Cover, Icon, type IconName } from "./ui";
 import { openBot, openTg } from "./tg";
 
+const plural = (n: number, one: string, few: string, many: string) => {
+  const a = n % 100, b = n % 10;
+  return a > 10 && a < 20 ? many : b === 1 ? one : b >= 2 && b <= 4 ? few : many;
+};
+
 type Tab = "home" | "learn" | "catalog" | "model" | "profile";
 
 const TILES: { tab: Tab; icon: IconName; variant: number; title: string; text: string; cta: string }[] = [
@@ -18,6 +23,7 @@ const TILES: { tab: Tab; icon: IconName; variant: number; title: string; text: s
 
 export default function Home({ go }: { go: (t: Tab) => void }) {
   const next = courseById("doctor-cosmetology");
+  const years = new Date().getFullYear() - CONFIG.since;
   return (
     <div className="tab-in">
       <section className="welcome">
@@ -25,13 +31,13 @@ export default function Home({ go }: { go: (t: Tab) => void }) {
         <h1>Купол</h1>
         <p className="lead">Краевой учебный центр косметологии и массажа и поставщик профессиональных препаратов.</p>
         <div className="stats">
-          <div><b>{new Date().getFullYear() - CONFIG.since}</b>года опыта</div>
-          <div><b>{courses.length}</b>программ</div>
-          <div><b>{teachers.length}</b>преподавателей</div>
+          <div><b>{years}</b>{plural(years, "год", "года", "лет")} опыта</div>
+          <div><b>{courses.length}</b>{plural(courses.length, "программа", "программы", "программ")}</div>
+          <div><b>{teachers.length}</b>{plural(teachers.length, "преподаватель", "преподавателя", "преподавателей")}</div>
         </div>
       </section>
 
-      <h2 className="sec">Что здесь можно сделать</h2>
+      <h2 className="sec">Чем мы можем помочь</h2>
       <div className="tiles">
         {TILES.map((t) => (
           <button key={t.tab} className="tile" onClick={() => go(t.tab)}>
