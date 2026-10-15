@@ -35,7 +35,7 @@ export default function Home() {
     setInTelegram(!!initData());
     w?.ready?.();
     w?.expand?.();
-    try { w?.setHeaderColor?.("#f5f6fb"); w?.setBackgroundColor?.("#f5f6fb"); } catch {}
+    try { w?.setHeaderColor?.("#0a0d18"); w?.setBackgroundColor?.("#0a0d18"); } catch {}
     const q = new URLSearchParams(window.location.search).get("tab");
     if (q === "catalog" || q === "model" || q === "profile" || q === "learn") setTab(q);
   }, []);
